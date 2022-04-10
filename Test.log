@@ -1,0 +1,12 @@
+# heading:  Description
+# observer: Kevin
+# filename: Console.log
+# date:     Sun Apr 10, 2022 at 16:15:39  v1.26
+58539.469492  begin
+58551.993785  c1 s
+58565.593057  c2 q
+58576.168177  c3 q
+58616.427514  c1 d c2 s
+58629.095138  c2 d c3 s
+58631.759459  c3 d
+58639.626270  end
