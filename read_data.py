@@ -1,6 +1,7 @@
 filename = 'KevinYeData-11-04-22'
 lines = []
 
+# open file and read all lines into a list
 f = open(filename, 'r')
 while True:
     line = f.readline()
@@ -8,10 +9,13 @@ while True:
         break
     lines.append(line)
 
+# Leave only lines with times and split each line into a list of 2 terms or more
 lines = lines[4:]
 for i in range(len(lines)):
     lines[i] = lines[i].split()
 f.close()
+
+# Function to search for an event in the list
 
 
 def find_event(data, event):
@@ -28,9 +32,7 @@ def find_event(data, event):
     return time
 
 
-print(find_event(lines, 'a10000'))
-
-
+# calculate interarrival times
 arrival_times = []
 cond = True
 i = 1
@@ -45,6 +47,8 @@ for i in range(len(arrival_times)-1):
     interarrival_time = float(arrival_times[i+1])-float(arrival_times[i])
     interarrival_times.append(interarrival_time)
 
+
+# calculate service times
 service_times = []
 cond = True
 i = 1
