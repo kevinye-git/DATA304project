@@ -1,4 +1,4 @@
-filename = 'KevinYeData-11-04-22'
+filename = 'DATA304-project\KevinYeData.txt'
 lines = []
 
 # open file and read all lines into a list
