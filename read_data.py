@@ -1,4 +1,4 @@
-filename = 'DATA304-project\KevinYeData.txt'
+filename = 'DATA304-project\dataviviandong.txt'
 lines = []
 
 # open file and read all lines into a list
@@ -60,5 +60,5 @@ while cond:
     service_times.append(float(find_event(lines, letter)) -
                          float(find_event(lines, letter2)))
     i += 1
-print(interarrival_times)
-print(service_times)
+print(interarrival_times, len(interarrival_times))
+print(service_times, len(service_times))
