@@ -1,0 +1,21 @@
+
+Modify reading script so it reads all data at once - Kevin by Monday 02/05/2022
+
+Fit a distribution to the data (exponential, gamma, erlang, etc.) using method of moments select best fit based on goodness of fit(chi square distribution and p-value)
+End up with two distributions one for inter arrival times and another for service times. - Vivian (interarrival times), Kevin (Service times) by Friday 06/05/2022
+
+Construct histograms and overlay the actual data with the best fit distribution to compare how good of a fit. - Patrick by Sunday 08/05/2022
+
+Start writing Latex report - Tama 
+
+Send message to group chat if you might not be able to complete the task in time
+
+Meeting on Wednesday Afternoon 11/05/2022
+
+Submission of Analysis of data and distributions on Thursday 12/05/2022
+
+After week 9
+Sort github files to resemble recommended repository folder format - Kevin
+
+
+
