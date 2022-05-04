@@ -78,5 +78,10 @@ if __name__ == "__main__":
     results = ReadData(filenames=filenames)
     AllArrivals = results[0]
     AllServices = results[1]
+    print("Inter-arrival time:")
     print(AllArrivals, len(AllArrivals))
+
+    print("")
+    
+    print("Service time:")
     print(AllServices, len(AllServices))
