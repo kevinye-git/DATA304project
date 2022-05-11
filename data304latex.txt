@@ -50,6 +50,10 @@ The code used in this file is from https://github.com/mungoliabhishek/Distributi
 
 Inter-Arrival Times and Service Times with best fit distributions
 
+From our analysis, it suggests that Pearson3 is the best in approximating ‘inter-arrival time’ Data.
+
+For our 'service times' data, it suggests that beta distribution is the best fit for the data.
+
 
 Upon putting the best fit distributions onto the original histogram data, we can see how good of a fit they are. Both the Beta and Pearson3 distribution are well distributed along the data
 
