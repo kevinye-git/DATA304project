@@ -3,6 +3,8 @@ Data304 Project Group 4
 
 Fitting different Distributions and checking Goodness of fit based on Chi-square Statistics.
 
+Inter-arrival Time:
+
 Distributions listed by Betterment of fit:
 ............................................
    Distribution   chi_square
@@ -20,6 +22,7 @@ Distributions listed by Betterment of fit:
 2   weibull_max  1137.915014
 
 
+Service Time:
 
 Distributions listed by Betterment of fit:
 ............................................
