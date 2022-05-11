@@ -58,3 +58,4 @@ For our 'service times' data, it suggests that beta distribution is the best fit
 Upon putting the best fit distributions onto the original histogram data, we can see how good of a fit they are. Both the Beta and Pearson3 distribution are well distributed along the data
 
 
+
