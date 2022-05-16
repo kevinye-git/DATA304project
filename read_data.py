@@ -17,7 +17,7 @@ def find_event(data, event):
     return time
 
 
-def CalculateL(filenames):
+def CalculateLorB(filenames, calc):
     total_sum = 0
     total_denom = 0
     for name in filenames:
@@ -43,7 +43,13 @@ def CalculateL(filenames):
             times.append(line.split()[0])
             number.append(total)
         for i in range(len(times)-1):
-            sum = sum + (float(number[i])*(float(times[i+1])-float(times[i])))
+            if calc == "B":
+                if float(number[i]) > 0:
+                    sum = sum + (float(times[i+1])-float(times[i]))
+            if calc == "L":
+                sum = sum + (float(number[i]) *
+                             (float(times[i+1])-float(times[i])))
+
         denom = float(times[-1])-float(times[0])
         total_sum = total_sum + sum
         total_denom = total_denom + denom
@@ -143,6 +149,8 @@ def ReadData(filenames):
 
 
 # main program - will not run if imported into another py file for use
+
+# Run this program to calculate parameters to be used in building M1 and M2 models and some performance measures for comparison
 if __name__ == "__main__":
     filenames = ["DATA304-project\Data Collection\KevinYeData.txt",
                  "DATA304-project\Data Collection\PatrickQData.txt",
@@ -153,6 +161,10 @@ if __name__ == "__main__":
     AllServices = results[1]
     AllQueues = results[2]
     AllTotaltime = results[3]
+    print("Calculated Parameters used for building models")
+
+    print("============================")
+
     print("Average Inter-arrival time:")
     print(np.mean(AllArrivals))
 
@@ -166,7 +178,9 @@ if __name__ == "__main__":
     print("Average Queue Time, W_q: ")
     print(np.mean(AllQueues))
 
-    print("")
+    print("===========================")
+
+    print("Performance Measures")
 
     print("Average time in system, W:")
     print(np.mean(AllTotaltime))
@@ -174,4 +188,14 @@ if __name__ == "__main__":
     print("")
 
     print("Average number of customers in the system, L")
-    print(CalculateL(filenames))
+    print(CalculateLorB(filenames, "L"))
+
+    print("")
+
+    print("Proportion of time servers are busy in the system, B")
+    print(CalculateLorB(filenames, "B"))
+
+    print("")
+
+    print("The effective arrival rate, Lambda Effective")
+    print(CalculateLorB(filenames, "L")/np.mean(AllTotaltime))
