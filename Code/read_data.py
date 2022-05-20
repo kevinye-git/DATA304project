@@ -152,10 +152,10 @@ def ReadData(filenames):
 
 # Run this program to calculate parameters to be used in building M1 and M2 models and some performance measures for comparison
 if __name__ == "__main__":
-    filenames = ["DATA304-project\Data Collection\KevinYeData.txt",
-                 "DATA304-project\Data Collection\PatrickQData.txt",
-                 "DATA304-project\Data Collection\TamaHoareData.txt",
-                 "DATA304-project\Data Collection\dataviviandong.txt"]
+    filenames = ["DATA304project\Data Collection\KevinYeData.txt",
+                 "DATA304project\Data Collection\PatrickQData.txt",
+                 "DATA304project\Data Collection\TamaHoareData.txt",
+                 "DATA304project\Data Collection\dataviviandong.txt"]
     results = ReadData(filenames=filenames)
     AllArrivals = results[0]
     AllServices = results[1]

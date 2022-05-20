@@ -27,18 +27,18 @@ Service Time:
 Distributions listed by Betterment of fit:
 ............................................
    Distribution   chi_square
-3          beta     1.582931
-0   weibull_min     2.017339
-9      pearson3     3.274222
-6         gamma     3.274604
-11       erlang     3.274684
-4      invgauss     8.160098
-8       lognorm     9.157703
-10       triang    34.097195
-7         expon    47.940959
-1          norm   122.974988
-5       uniform   282.854169
-2   weibull_max  1071.813702
+3          beta     1.231338
+0   weibull_min     2.831316
+9      pearson3     4.130412
+6         gamma     4.131762
+11       erlang     4.132443
+4      invgauss    10.560874
+8       lognorm    11.688749
+7         expon    29.775131
+10       triang    39.441479
+1          norm   140.194689
+5       uniform   305.594183
+2   weibull_max  1080.829277
 
 
 

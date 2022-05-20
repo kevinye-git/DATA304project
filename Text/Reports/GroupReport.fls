@@ -1,8 +1,8 @@
-PWD c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 5/DATA304-project/LatexReport
+PWD c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 7/DATA304project/Text/Reports
 INPUT c:/texlive/2022/texmf.cnf
 INPUT c:/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 5/DATA304-project/LatexReport/GroupReport.tex
+INPUT c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 7/DATA304project/Text/Reports/GroupReport.tex
 OUTPUT GroupReport.log
 INPUT c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2022/texmf-dist/tex/latex/base/article.cls

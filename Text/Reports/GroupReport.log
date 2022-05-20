@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.12)  16 MAY 2022 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.12)  20 MAY 2022 20:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 5/DATA304-project/LatexReport/GroupReport.tex"
-(c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 5/DATA304-project/LatexReport/GroupReport.tex
+**"c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 7/DATA304project/Text/Reports/GroupReport.tex"
+(c:/Users/PDPDK/OneDrive/Documents/Assignments and Labs - Kevin Ye/DATA304/DATA304 Project 7/DATA304project/Text/Reports/GroupReport.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-05-04> (c:/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
@@ -242,22 +242,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <fig1.png, id=9, 399.4925pt x 279.0425pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 41.
+Package pdftex.def Info: fig1.png  used on input line 42.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
 <fig2.png, id=11, 399.4925pt x 279.0425pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 48.
+Package pdftex.def Info: fig2.png  used on input line 49.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
 <fig3.png, id=12, 399.4925pt x 279.0425pt>
 File: fig3.png Graphic file (type png)
 <use fig3.png>
-Package pdftex.def Info: fig3.png  used on input line 61.
+Package pdftex.def Info: fig3.png  used on input line 62.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
 <fig4.png, id=13, 399.4925pt x 279.0425pt>
 File: fig4.png Graphic file (type png)
 <use fig4.png>
-Package pdftex.def Info: fig4.png  used on input line 68.
+Package pdftex.def Info: fig4.png  used on input line 69.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
 
 
@@ -273,7 +273,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  55i,8n,63p,1099b,529s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on GroupReport.pdf (4 pages, 132691 bytes).
+Output written on GroupReport.pdf (4 pages, 132699 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream
