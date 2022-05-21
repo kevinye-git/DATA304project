@@ -9,6 +9,7 @@
 \usepackage{fancyhdr}
 \usepackage{amsmath}
 \usepackage{float} % here for H placement parameter
+\usepackage{hyperref}
 
 \font\myfont=cmr12 at 100pt
 \title{\Huge DATA304 Project Group 4:\\
@@ -32,7 +33,67 @@ Suo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt j
 Phasellus nec lorem nec nibh aliquet imperdiet nec a dolor. Nunc auctor leo sit amet sem suscipit, et accumsan nunc ultrices. Praesent vitae nulla id dolor vulputate porttitor. Integer nisl lorem, dictum nec ultrices at, malesuada sed ligula. Curabitur vehicula orci non libero eleifend commodo. Cras vitae lacus tellus. Nullam feugiat, nisi at tempus rutrum, arcu nibh commodo odio, at aliquet nulla tortor non neque. Nulla eget nulla vel libero suscipit gravida. Conclusion. idskfjslf
 
 \subsection{Fitting best fit distributions (Vivian)}
-Mauris id dapibus libero. Proin facilisis feugiat turpis, eget vestibulum eros sagittis ut. Quisque ligula velit, lacinia quis mattis sed, malesuada quis est. Cras quis finibus augue. In volutpat feugiat nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ex a risus accumsan rhoncus. Nunc eget pulvinar ex. Donec vel tortor et odio faucibus pharetra. Sed ac risus dignissim, feugiat magna non, faucibus nibh.
+
+We tried to approximate "inter-arrival time" and "service time" using the following 12 Distributions: Weibull Minimum Extreme Value distribution, Normal distribution, Weibull Maximum Extreme Value distribution, Beta distribution, Inverse Gaussian distribution, Uniform distribution, Gamma distribution, Exponential distribution, Log-normal distribution, Pearson Type III distribution, Triangular distribution, Erlang distribution. After fitting different distributions, we checked the Goodness of fit based on Chi-square Statistics.\newline
+
+The output for "inter-arrival time" sorted in order of Goodness of fit looks like this:\newline
+
+\begin{table}[h!]
+    \centering
+    \caption{Distributions listed by Betterment of fit}
+    \begin{tabu}{*{2}{X[c]}}
+        \toprule
+        \textbf{Distribution} & \textbf{chi square}\\
+        \midrule
+        Pearson Type III distribution & 9.155252\\
+        Weibull Minimum Extreme Value distribution & 13.245287\\
+        Beta distribution & 21.708357\\
+        Log Normal distribution & 25.596288\\
+        Inverse Gaussian distribution & 29.389634\\
+        Exponential distribution & 29.515278\\
+        Gamma distribution & 48.359331\\
+        Triangular distribution & 209.930441\\
+        Normal distribution & 332.531278\\
+        Uniform distribution & 510.690318\\
+        Erlang distribution & 672.400334\\
+        Weibull Maximum Extreme Value distribution & 1137.915014\\
+        \bottomrule
+    \end{tabu}
+    \label{tab:Inter-arrival Best Fit}
+\end{table}
+
+The output for 'service time' sorted in order of Goodness of fit looks like this:\newline
+
+\begin{table}[h!]
+    \centering
+    \caption{Distributions listed by Betterment of fit}
+    \begin{tabu}{*{2}{X[c]}}
+        \toprule
+        \textbf{Distribution} & \textbf{chi square}\\
+        \midrule
+        Beta distribution & 1.231338\\
+        Weibull Minimum Extreme Value distribution & 2.831316\\
+        Pearson Type III distribution & 4.130412\\
+        Gamma distribution & 4.131762\\
+        Erlang distribution & 4.132443\\
+        Inverse Gaussian distribution & 10.560874\\
+        Log Normal distribution & 11.688749\\
+        Exponential distribution & 29.775131\\
+        Triangular distribution & 39.441479\\
+        Normal distribution & 140.194689\\
+        Uniform distribution & 305.594183\\
+        Weibull Maximum Extreme Value distribution & 1080.829277\\
+        \bottomrule
+    \end{tabu}
+    \label{tab:Service Best Fit}
+\end{table}
+
+The Chi-square statistics suggest that the Pearson Type III distribution best approximates 'inter-arrival time'. We can also see that Beta distribution is the best fit for 'service time'.\newline
+
+The python code using the Scipy Library to fit the distribution is from here:
+\url{https://github.com/mungoliabhishek/Distribution-Fitting-Used_Car_Dataset/blob/master/Workbook.ipynb}\newline
+
+Suppose we had more time to do this part. In that case, we will add more distributions to fit our data and find a better fit distribution of the interarrival/service times. Furthermore, we can also use the Anderson-Darling test or other goodness-of-fit tests to compare whether we will get the same results.
 
 \subsection{Histogram plots for visual evaluation (Patrick)}
 
@@ -185,9 +246,17 @@ Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit 
 
 \subsection{M2 model (Vivian)}
 
+In this model, the interarrival times is:\newline
+pearson3(skew=2.43659632424228, loc=89.15123787553043, scale=108.61278925458328)\newline
+
+The service times is\newline
+beta(a=1.4923327932636143, b=15.801670930407775, loc=7.642594962182772, scale=1311.3920705953165).\newline
+
+The performance simulated by this model is from the table below:
+
 \begin{table}[H]
     \centering
-    \caption{This is the caption that goes at the top of the table}
+    \caption{Best fit model}
     \begin{tabu}{*{3}{X[c]}}
         \toprule
         \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M2 model}\\
@@ -201,7 +270,7 @@ Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit 
     \label{tab:M2}
 \end{table}
 
-Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus varius, molestie dapibus risus sodales. Nullam feugiat vitae augue non ullamcorper. Nulla et nibh orci. Praesent lacus est, mollis efficitur ligula eget, condimentum tempus risus. Nullam auctor placerat dignissim.
+
 
 \subsection{M3 model (Kevin)}
 
