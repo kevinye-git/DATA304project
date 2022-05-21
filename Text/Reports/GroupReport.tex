@@ -110,7 +110,10 @@ The Chi-square statistics suggest that the Pearson Type III distribution best ap
     \label{fig:two-figs}
 \end{figure}
 
-Mauris rhoncus fringilla mollis. Ut tincidunt eros vel dolor aliquam, at consequat erat malesuada. Morbi interdum, lectus non dictum efficitur, mi erat molestie enim, quis gravida felis mi in arcu. Sed sit amet leo eget urna maximus sollicitudin sit amet et nisi. Donec maximus neque a tortor sagittis eleifend. Maecenas felis tortor, feugiat et ipsum in, congue imperdiet lectus. Aenean porta suscipit neque in rutrum. In eros erat, vulputate eu consequat vitae, facilisis nec felis.
+Here, we have divided the inter-arrival time and the service time data into a number of phases, such that the time occupied by each phase has a negative exponential distribution. This is used by Erlang regarding service to be completed in k phases which has the same negative-exponential distribution, thus obtaining what is called a k-Erland distribution.
+The inter-arrival is the interval of time between each arrival. Assuming that the arrivals are independent, their distribution is exponential.
+The service times defines as the time required to serve a customer. 
+These assumptions are further confirmed above by the histograms of the observations. We have observed the arrival of customers for a few hours.
 
 \begin{figure}[h]
     \centering
@@ -132,9 +135,7 @@ Mauris rhoncus fringilla mollis. Ut tincidunt eros vel dolor aliquam, at consequ
     \label{fig:two-figs2}
 \end{figure}
 
-Mauris rhoncus fringilla mollis. Ut tincidunt eros vel dolor aliquam, at consequat erat malesuada. Morbi interdum, lectus non dictum efficitur, mi erat molestie enim, quis gravida felis mi in arcu. Sed sit amet leo eget urna maximus sollicitudin sit amet et nisi. Donec maximus neque a tortor sagittis eleifend. Maecenas felis tortor, feugiat et ipsum in, congue imperdiet lectus. Aenean porta suscipit neque in rutrum. In eros erat, vulputate eu consequat vitae, facilisis nec felis.
-
-Nullam dictum enim a diam finibus pretium. Nulla posuere mi vitae ultrices rutrum. Proin pellentesque neque id vulputate sollicitudin. Fusce malesuada dignissim dolor, non suscipit magna convallis semper. Vivamus turpis mauris, semper in quam quis, ultrices vulputate eros. Nulla finibus varius diam, vitae convallis lacus rutrum in. Pellentesque imperdiet gravida odio, hendrerit sagittis tellus sollicitudin id. Curabitur tincidunt ante mauris, eu venenatis tellus congue at.
+The second pair of histograms above are fitted with the best fit distributions. We have fitted the inter-arrival and service time histograms with a list of distributions listed by Betterment of fit. Based on the Chi-square Statistics, it suggests that Pearson3 is the best in approximating ‘inter-arrival time’ Data. For our 'service times' data, it suggests that beta distribution is the best fit for the data.
 
 \section{Simulation models}
 
@@ -177,7 +178,7 @@ Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit 
 
 \subsection{M1 model (Patrick)}
 
-Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae 
+The M1 model is a task where we investigate and use either M/M/1 or M/M/C depending on our structure. An M/M/1 queue represents the queue length in a system having a single server, where arrivals are determined by a Poisson process and service times gave an exponential distribution. In the case of our project, we have an M/M/3 queue as there were 3 servers from where we gathered our data form.
 
 $$
 \pi_{0} = \frac{1}{\sum_{k=0}^{s-1}{\frac{\rho^k}{k!}} + \frac{\rho^s}{s!}\frac{1}{1-\frac{\rho}{s}}}
@@ -217,11 +218,11 @@ $$
 
 
 
-Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus
+Upon generating all the values (check the table below), we have used the formula to compare to the original data we’ve gathered. This is used to confirm that the values from the M1 model are correct after doing the math.
 
 \begin{table}[h!]
     \centering
-    \caption{This is the caption that goes at the top of the table}
+    \caption{Comparing performance measures of Collected data and M1 model}
     \begin{tabu}{*{3}{X[c]}}
         \toprule
         \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M1 model}\\
@@ -235,7 +236,9 @@ Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit 
     \label{tab:M1}
 \end{table}
 
-Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus varius, molestie dapibus risus sodales. Nullam feugiat vitae augue non ullamcorper. Nulla et nibh orci. Praesent lacus est, mollis efficitur ligula eget, condimentum tempus risus. Nullam auctor placerat dignissim.
+In creating the M1 model, we took inspiration from the assignments and labs to be able to produce these outcomes. We have passed our data on arrival and service rate through the model and got the values above.
+We had a mean arrival rate of 0.008310517468785045 per second, and a mean service rate of 0.008279591609419837 per second. The LAB Cafe is open from 7:30 am to 3:00 pm a total of 7.5 hours per day which is equivalent to 27000 seconds which would be the max time of each simulation. 
+W is denoted as the average waiting of customers, L is the average number of customers in the system, B is the proportion of time that servers are busy, and lambdaEff is the effective arrival rate.
 
 \subsection{M2 model (Vivian)}
 
