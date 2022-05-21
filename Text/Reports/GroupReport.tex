@@ -36,7 +36,7 @@ Phasellus nec lorem nec nibh aliquet imperdiet nec a dolor. Nunc auctor leo sit 
 
 We tried to approximate "inter-arrival time" and "service time" using the following 12 Distributions: Weibull Minimum Extreme Value distribution, Normal distribution, Weibull Maximum Extreme Value distribution, Beta distribution, Inverse Gaussian distribution, Uniform distribution, Gamma distribution, Exponential distribution, Log-normal distribution, Pearson Type III distribution, Triangular distribution, Erlang distribution. After fitting different distributions, we checked the Goodness of fit based on Chi-square Statistics. The outputs for "inter-arrival time" sorted in order of Goodness of fit looks like this: 
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \caption{Distributions listed by Betterment of fit}
     \begin{tabu}{*{2}{X[c]}}
@@ -279,8 +279,9 @@ The performance simulated by this model is from the table below:
     \label{tab:M3}
 \end{table}
 
+The M3 model is a simulation model developed using SimPy to model the LAB cafe customer waiting and serving system. The distribution of interarrival and service times are modelled after the empirical distributions of the interarrival times and services times recorded from the original data. From the M3 model produced some performance measures estimates in the table above which we can compare to the original data performance measure estimates to gauge how well of a fit this M3 model is at simulating the nature of the real life system.
 
-Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus varius, molestie dapibus risus sodales. Nullam feugiat vitae augue non ullamcorper. Nulla et nibh orci. Praesent lacus est, mollis efficitur ligula eget, condimentum tempus risus. Nullam auctor placerat dignissim.
+From the table we can see that estimated W from the M3 model has a difference of approximately 13 to the estimate provided by the original data collected. The L difference between the two estimations by the colletced data and the M3 model is about 0.1. The difference in the B, proportion of time servers are busy was 0.01 between the two estimates of the collected data and the M3 model. The effective arrival rate $\lambda_{\text{eff}}$ has a difference of 0.0001 approximately between the original data and the M3 estimate. We can see that The M3 model is a decent fit for the original data as the differences are around about $10\%$ of the original data estimates.
 
 \section{Conclusion}
 
