@@ -34,9 +34,7 @@ Phasellus nec lorem nec nibh aliquet imperdiet nec a dolor. Nunc auctor leo sit 
 
 \subsection{Fitting best fit distributions (Vivian)}
 
-We tried to approximate "inter-arrival time" and "service time" using the following 12 Distributions: Weibull Minimum Extreme Value distribution, Normal distribution, Weibull Maximum Extreme Value distribution, Beta distribution, Inverse Gaussian distribution, Uniform distribution, Gamma distribution, Exponential distribution, Log-normal distribution, Pearson Type III distribution, Triangular distribution, Erlang distribution. After fitting different distributions, we checked the Goodness of fit based on Chi-square Statistics.\newline
-
-The output for "inter-arrival time" sorted in order of Goodness of fit looks like this:\newline
+We tried to approximate "inter-arrival time" and "service time" using the following 12 Distributions: Weibull Minimum Extreme Value distribution, Normal distribution, Weibull Maximum Extreme Value distribution, Beta distribution, Inverse Gaussian distribution, Uniform distribution, Gamma distribution, Exponential distribution, Log-normal distribution, Pearson Type III distribution, Triangular distribution, Erlang distribution. After fitting different distributions, we checked the Goodness of fit based on Chi-square Statistics. The outputs for "inter-arrival time" sorted in order of Goodness of fit looks like this: 
 
 \begin{table}[h!]
     \centering
@@ -62,7 +60,7 @@ The output for "inter-arrival time" sorted in order of Goodness of fit looks lik
     \label{tab:Inter-arrival Best Fit}
 \end{table}
 
-The output for 'service time' sorted in order of Goodness of fit looks like this:\newline
+The outputs for "service time" sorted in order of Goodness of fit looks like this:
 
 \begin{table}[h!]
     \centering
@@ -88,12 +86,7 @@ The output for 'service time' sorted in order of Goodness of fit looks like this
     \label{tab:Service Best Fit}
 \end{table}
 
-The Chi-square statistics suggest that the Pearson Type III distribution best approximates 'inter-arrival time'. We can also see that Beta distribution is the best fit for 'service time'.\newline
-
-The python code using the Scipy Library to fit the distribution is from here:
-\url{https://github.com/mungoliabhishek/Distribution-Fitting-Used_Car_Dataset/blob/master/Workbook.ipynb}\newline
-
-Suppose we had more time to do this part. In that case, we will add more distributions to fit our data and find a better fit distribution of the interarrival/service times. Furthermore, we can also use the Anderson-Darling test or other goodness-of-fit tests to compare whether we will get the same results.
+The Chi-square statistics suggest that the Pearson Type III distribution best approximates 'inter-arrival time'. We can also see that Beta distribution is the best fit for 'service time'. The python code using the Scipy Library to fit the distribution is from here:\href{https://github.com/mungoliabhishek/Distribution-Fitting-Used_Car_Dataset/blob/master/Workbook.ipynb}{Distribution Fitting Code} Suppose we had more time to do this part. In that case, we will add more distributions to fit our data and find a better fit distribution of the interarrival/service times. Furthermore, we can also use the Anderson-Darling test or other goodness-of-fit tests to compare whether we will get the same results.
 
 \subsection{Histogram plots for visual evaluation (Patrick)}
 
@@ -246,11 +239,7 @@ Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit 
 
 \subsection{M2 model (Vivian)}
 
-In this model, the interarrival times is:\newline
-pearson3(skew=2.43659632424228, loc=89.15123787553043, scale=108.61278925458328)\newline
-
-The service times is\newline
-beta(a=1.4923327932636143, b=15.801670930407775, loc=7.642594962182772, scale=1311.3920705953165).\newline
+The interarrival times are randomly generated from the fitted Pearson Type III distribution in this model. The service times are randomly generated from the fitted Beta distribution.
 
 The performance simulated by this model is from the table below:
 
