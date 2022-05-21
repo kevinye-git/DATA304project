@@ -7,7 +7,8 @@
 \usepackage[]{subcaption}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
-
+\usepackage{amsmath}
+\usepackage{float} % here for H placement parameter
 
 \font\myfont=cmr12 at 100pt
 \title{\Huge DATA304 Project Group 4:\\
@@ -28,12 +29,12 @@ Suo Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt j
 \noindent Maecenas ullamcorper sem id magna sodales tempor. Sed non est urna. Mauris nec ante quis diam cursus suscipit non imperdiet erat. Donec posuere consectetur hendrerit. Proin pharetra, nulla eu pharetra vulputate, magna mi malesuada enim, non euismod augue lorem quis nunc. Quisque hendrerit euismod hendrerit. Maecenas tempor augue sit amet ultrices elementum. Proin posuere semper diam, ut lobortis sem eleifend sit amet. Nulla ornare eget ligula in ornare. Ut vel finibus ligula. Donec sollicitudin, dolor non porta faucibus, sapien elit ultrices augue, ac mattis ante neque sed neque.
 
 \section{Data analysis}
-Phasellus nec lorem nec nibh aliquet imperdiet nec a dolor. Nunc auctor leo sit amet sem suscipit, et accumsan nunc ultrices. Praesent vitae nulla id dolor vulputate porttitor. Integer nisl lorem, dictum nec ultrices at, malesuada sed ligula. Curabitur vehicula orci non libero eleifend commodo. Cras vitae lacus tellus. Nullam feugiat, nisi at tempus rutrum, arcu nibh commodo odio, at aliquet nulla tortor non neque. Nulla eget nulla vel libero suscipit gravida.
+Phasellus nec lorem nec nibh aliquet imperdiet nec a dolor. Nunc auctor leo sit amet sem suscipit, et accumsan nunc ultrices. Praesent vitae nulla id dolor vulputate porttitor. Integer nisl lorem, dictum nec ultrices at, malesuada sed ligula. Curabitur vehicula orci non libero eleifend commodo. Cras vitae lacus tellus. Nullam feugiat, nisi at tempus rutrum, arcu nibh commodo odio, at aliquet nulla tortor non neque. Nulla eget nulla vel libero suscipit gravida. Conclusion. idskfjslf
 
-\subsection{Fitting best fit distributions}
+\subsection{Fitting best fit distributions (Vivian)}
 Mauris id dapibus libero. Proin facilisis feugiat turpis, eget vestibulum eros sagittis ut. Quisque ligula velit, lacinia quis mattis sed, malesuada quis est. Cras quis finibus augue. In volutpat feugiat nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis ex a risus accumsan rhoncus. Nunc eget pulvinar ex. Donec vel tortor et odio faucibus pharetra. Sed ac risus dignissim, feugiat magna non, faucibus nibh.
 
-\subsection{Histogram plots for visual evaluation}
+\subsection{Histogram plots for visual evaluation (Patrick)}
 
 \begin{figure}[h]
     \centering
@@ -54,6 +55,8 @@ Mauris id dapibus libero. Proin facilisis feugiat turpis, eget vestibulum eros s
     \caption{Histograms of inter-arrival times and service times}
     \label{fig:two-figs}
 \end{figure}
+
+Mauris rhoncus fringilla mollis. Ut tincidunt eros vel dolor aliquam, at consequat erat malesuada. Morbi interdum, lectus non dictum efficitur, mi erat molestie enim, quis gravida felis mi in arcu. Sed sit amet leo eget urna maximus sollicitudin sit amet et nisi. Donec maximus neque a tortor sagittis eleifend. Maecenas felis tortor, feugiat et ipsum in, congue imperdiet lectus. Aenean porta suscipit neque in rutrum. In eros erat, vulputate eu consequat vitae, facilisis nec felis.
 
 \begin{figure}[h]
     \centering
@@ -81,19 +84,143 @@ Nullam dictum enim a diam finibus pretium. Nulla posuere mi vitae ultrices rutru
 
 \section{Simulation models}
 
-\subsection{Performance Measures of collected data}
+\subsection{Performance Measures of collected data (Tama)}
+
+\begin{table}[h!]
+    \centering
+    \caption{This is the caption that goes at the top of the table}
+    \begin{tabu}{*{2}{X[c]}}
+        \toprule
+        \textbf{Performance Measures} & \textbf{Values calculated from data}\\
+        \midrule
+        Average time in system (seconds), $W$   & 140.07 \\
+        Average number of customers in the system, $L$ & 1.1819\\
+        Proportion of time servers are busy, $B$ & 0.61148  \\
+        Effective arrival rate (per second), $\lambda_{\text{eff}}$ & 0.0084381\\
+        \bottomrule
+    \end{tabu}
+    \label{tab:Original Data PF}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \caption{This is the caption that goes at the top of the table}
+    \begin{tabu}{*{2}{X[c]}}
+        \toprule
+        \textbf{Other parameters} & \textbf{Values calculated from data} \\
+        \midrule
+        Average Inter-arrival time $\frac{1}{\lambda}$ (seconds) & 120.329  \\
+        Average Service time, $W_s$ (seconds) & 120.77  \\
+        Average Queue Time, $W_q$ (seconds) & 19.295  \\
+        \bottomrule
+    \end{tabu}
+    \label{tab:Original Data Other}
+\end{table}
+
+
 
 Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus varius, molestie dapibus risus sodales. Nullam feugiat vitae augue non ullamcorper. Nulla et nibh orci. Praesent lacus est, mollis efficitur ligula eget, condimentum tempus risus. Nullam auctor placerat dignissim.
 
-\subsection{M1 model}
+\subsection{M1 model (Patrick)}
+
+Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae 
+
+$$
+\pi_{0} = \frac{1}{\sum_{k=0}^{s-1}{\frac{\rho^k}{k!}} + \frac{\rho^s}{s!}\frac{1}{1-\frac{\rho}{s}}}
+$$
+
+$$
+\pi_{0} = \frac{1}{\frac{\rho^0}{0!} + \frac{\rho^1}{1!} + \frac{\rho^2}{2!} + \frac{\rho^3}{3!}\frac{1}{1-\frac{\rho}{3}}}
+$$
+
+$$
+\pi_{0} = \frac{1}{1 + \rho + \frac{\rho^2}{2} + \frac{\rho^3}{6}\frac{1}{1-\frac{\rho}{3}}}
+$$
+
+$$
+\pi_{0} = 0.3690202951
+$$
+
+$$
+B = 1-\pi_{0} = 0.6309797049
+$$
+
+$$
+L = \pi_{0}\frac{\frac{\rho^{s+1}}{s!s}}{(1-\frac{\rho}{s})^2}+\rho
+$$
+
+$$
+L = \pi_{0}\frac{\frac{\rho^{4}}{3!3}}{(1-\frac{\rho}{3})^2}+\rho
+$$
+
+$$
+L = 1.033745189
+$$
+
+$$
+W = \frac{L}{\lambda} = 124.3899904
+$$
+
+
+
+Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus
+
+\begin{table}[h!]
+    \centering
+    \caption{This is the caption that goes at the top of the table}
+    \begin{tabu}{*{3}{X[c]}}
+        \toprule
+        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M1 model}\\
+        \midrule
+        $W$ & 140.07 & 124.33\\
+        $L$ & 1.1819 & 1.0435\\
+        $B$ & 0.61148 & 0.63064\\
+        $\lambda_{\text{eff}}$ & 0.0084381 & 0.0083952\\
+        \bottomrule
+    \end{tabu}
+    \label{tab:M1}
+\end{table}
 
 Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus varius, molestie dapibus risus sodales. Nullam feugiat vitae augue non ullamcorper. Nulla et nibh orci. Praesent lacus est, mollis efficitur ligula eget, condimentum tempus risus. Nullam auctor placerat dignissim.
 
-\subsection{M2 model}
+\subsection{M2 model (Vivian)}
+
+\begin{table}[H]
+    \centering
+    \caption{This is the caption that goes at the top of the table}
+    \begin{tabu}{*{3}{X[c]}}
+        \toprule
+        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M2 model}\\
+        \midrule
+        $W$ & 140.07 & 143.28\\
+        $L$ & 1.1819 & 1.6283\\
+        $B$ & 0.61148 & 0.71400\\
+        $\lambda_{\text{eff}}$ & 0.0084381 & 0.011347\\
+        \bottomrule
+    \end{tabu}
+    \label{tab:M2}
+\end{table}
 
 Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus varius, molestie dapibus risus sodales. Nullam feugiat vitae augue non ullamcorper. Nulla et nibh orci. Praesent lacus est, mollis efficitur ligula eget, condimentum tempus risus. Nullam auctor placerat dignissim.
 
-\subsection{M3 model}
+\subsection{M3 model (Kevin)}
+
+\begin{table}[h!]
+    \centering
+    \caption{This is the caption that goes at the top of the table}
+    \begin{tabu}{*{3}{X[c]}}
+        \toprule
+        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M3 model}\\
+        \midrule
+        $W$ & 140.07 & 127.14\\
+        $L$ & 1.1819 & 1.0853\\
+        $B$ & 0.61148 & 0.62465\\
+        $\lambda_{\text{eff}}$ & 0.0084381 & 0.0085284\\
+        \bottomrule
+    \end{tabu}
+    \label{tab:M3}
+\end{table}
+
 
 Suspendisse accumsan ante velit, a tempor urna porta ac. Proin porttitor, velit non rutrum tincidunt, nibh nulla mattis urna, vitae lobortis erat dui eget risus. Proin tincidunt tincidunt orci eget auctor. Mauris id sodales velit. Aliquam faucibus quam eu tellus varius, molestie dapibus risus sodales. Nullam feugiat vitae augue non ullamcorper. Nulla et nibh orci. Praesent lacus est, mollis efficitur ligula eget, condimentum tempus risus. Nullam auctor placerat dignissim.
 

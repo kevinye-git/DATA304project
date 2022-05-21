@@ -1,0 +1,23 @@
+Calculated Parameters used for building models
+============================
+Average Inter-arrival time:
+120.32945045312502
+
+Average Service time, W_s:
+120.77890398148169
+
+Average Queue Time, W_q: 
+19.29576795987645
+===========================
+Performance Measures
+Average time in system, W:
+140.07467194135813
+
+Average number of customers in the system, L
+1.1819665982792091
+
+Proportion of time servers are busy in the system, B
+0.6114848739024165
+
+The effective arrival rate, Lambda Effective
+0.008438117911666687
