@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.12)  21 MAY 2022 18:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.12)  25 MAY 2022 14:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -421,48 +421,51 @@ LaTeX Info: Redefining \nameref on input line 20.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2]
-<fig1.png, id=62, 399.4925pt x 279.0425pt>
+<fig1.png, id=85, 399.4925pt x 279.0425pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 97.
+Package pdftex.def Info: fig1.png  used on input line 112.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
-<fig2.png, id=64, 399.4925pt x 279.0425pt>
+<fig2.png, id=87, 399.4925pt x 279.0425pt>
 File: fig2.png Graphic file (type png)
 <use fig2.png>
-Package pdftex.def Info: fig2.png  used on input line 104.
+Package pdftex.def Info: fig2.png  used on input line 119.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
-<fig3.png, id=65, 399.4925pt x 279.0425pt>
+[2]
+<fig3.png, id=97, 399.4925pt x 279.0425pt>
 File: fig3.png Graphic file (type png)
 <use fig3.png>
-Package pdftex.def Info: fig3.png  used on input line 119.
+Package pdftex.def Info: fig3.png  used on input line 137.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
-<fig4.png, id=66, 399.4925pt x 279.0425pt>
+<fig4.png, id=98, 399.4925pt x 279.0425pt>
 File: fig4.png Graphic file (type png)
 <use fig4.png>
-Package pdftex.def Info: fig4.png  used on input line 126.
+Package pdftex.def Info: fig4.png  used on input line 144.
 (pdftex.def)             Requested size: 211.38832pt x 147.65337pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 [3 <./fig1.png> <./fig2.png>] [4 <./fig3.png> <./fig4.png>] [5] [6] (./GroupReport.aux)
 Package rerunfilecheck Info: File `GroupReport.out' has not changed.
-(rerunfilecheck)             Checksum: 073AAF9CB4168D5E6AA91B15BCC6E48A;1787.
+(rerunfilecheck)             Checksum: 4E4A421EB0D5F3B758B279226FB57654;2957.
  ) 
 Here is how much of TeX's memory you used:
- 11915 strings out of 478300
- 191069 string characters out of 5849123
- 497329 words of memory out of 5000000
- 29930 multiletter control sequences out of 15000+600000
+ 11932 strings out of 478300
+ 191317 string characters out of 5849123
+ 496348 words of memory out of 5000000
+ 29939 multiletter control sequences out of 15000+600000
  476155 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,20n,63p,1099b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 60i,20n,63p,865b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on GroupReport.pdf (6 pages, 233221 bytes).
+Output written on GroupReport.pdf (6 pages, 234918 bytes).
 PDF statistics:
- 179 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 212 PDF objects out of 1000 (max. 8388607)
+ 162 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
