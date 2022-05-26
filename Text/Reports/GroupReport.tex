@@ -264,9 +264,7 @@ W is denoted as the average waiting of customers, L is the average number of cus
 
 \subsection{M2 model (Vivian)}
 
-The interarrival times are randomly generated from the fitted Pearson Type III distribution in this model. The service times are randomly generated from the fitted Beta distribution.
-
-The performance simulated by this model is from the table below:
+The M2 model is a simulation model developed using SimPy to model the LAB cafe customer waiting and serving system. M2 model uses the interarrival times best fit distribution (Pearson3) and the service times best fit distribution (Beta) to simulate the performance. Below is the comparison between the original data performance measure estimates and the performance measures estimates produced by M2 model.
 
 \begin{table}[H]
     \centering
@@ -283,6 +281,8 @@ The performance simulated by this model is from the table below:
     \end{tabu}
     \label{tab:M2}
 \end{table}
+
+From the table above, we can see that the estimated W from the M2 model has a difference of approximately 3.21 from the estimate provided by the original data collected. The L difference between the two estimations by the collected data and the M2 model is about 0.45. The difference in the proportion of time servers are busy (B) was 0.1 between the two estimates of the collected data and the M2 model. The effective arrival rate $\lambda_{\text{eff}}$ has a difference of 0.0029 approximately between the original data and the M2 estimate. We can see that the M2 model is a decent fit for the actual data as the differences are relatively small.
 
 
 

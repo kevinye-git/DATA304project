@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1653541572 "/Users/viviandong/Desktop/COMP312/DATA304project/Text/Reports/GroupReport.tex" "GroupReport.pdf" "GroupReport" 1653541573
-  "/Users/viviandong/Desktop/COMP312/DATA304project/Text/Reports/GroupReport.tex" 1653541569 14761 b93fba40d102d2bec5813224aa2739ac ""
+["pdflatex"] 1653541874 "/Users/viviandong/Desktop/COMP312/DATA304project/Text/Reports/GroupReport.tex" "GroupReport.pdf" "GroupReport" 1653541876
+  "/Users/viviandong/Desktop/COMP312/DATA304project/Text/Reports/GroupReport.tex" 1653541873 15569 3acc10a5ad9eb146c63d5cbc3982e505 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -98,9 +98,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653100541 2826437 3d17464a9e6fe47ce09a3cf6ec90ecaa ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "GroupReport.aux" 1653541573 6029 ee0a33a61d5396d7719ce689356014ca "pdflatex"
-  "GroupReport.out" 1653541573 3008 9b014ef9d57c17ce16c52549d654a1b2 "pdflatex"
-  "GroupReport.tex" 1653541569 14761 b93fba40d102d2bec5813224aa2739ac ""
+  "GroupReport.aux" 1653541876 6029 2d7e3de1884329e53d0863855b39ef71 "pdflatex"
+  "GroupReport.out" 1653541876 3008 9b014ef9d57c17ce16c52549d654a1b2 "pdflatex"
+  "GroupReport.tex" 1653541873 15569 3acc10a5ad9eb146c63d5cbc3982e505 ""
   "fig1.png" 1653444735 7633 c5f9827713934acf76dfb621136b5aa8 ""
   "fig2.png" 1653444735 6151 aab5e420d5b0743c500462c90c45ad9c ""
   "fig3.png" 1653444735 13890 4a577e97769dae6cd57fdfeac6dfcc04 ""
