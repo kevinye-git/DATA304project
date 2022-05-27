@@ -4,45 +4,45 @@ The top-level auxiliary file: GroupReport.aux
 The style file: plain.bst
 Database file #1: references.bib
 Warning--empty journal in hillier1967introduction
-You've used 3 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4389 characters,
-and the built_in function-call counts, 766 in all, are:
-= -- 74
-> -- 27
+            530 strings with 4849 characters,
+and the built_in function-call counts, 1539 in all, are:
+= -- 151
+> -- 73
 < -- 0
-+ -- 12
-- -- 8
-* -- 42
-:= -- 137
-add.period$ -- 9
-call.type$ -- 3
-change.case$ -- 13
++ -- 31
+- -- 24
+* -- 105
+:= -- 270
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 28
-empty$ -- 67
-format.name$ -- 8
-if$ -- 155
+cite$ -- 6
+duplicate$ -- 50
+empty$ -- 118
+format.name$ -- 24
+if$ -- 307
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 2
-newline$ -- 18
-num.names$ -- 6
-pop$ -- 17
+int.to.str$ -- 5
+missing$ -- 4
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 27
 preamble$ -- 1
-purify$ -- 10
+purify$ -- 22
 quote$ -- 0
-skip$ -- 22
+skip$ -- 36
 stack$ -- 0
-substring$ -- 41
-swap$ -- 2
+substring$ -- 99
+swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 20
 warning$ -- 1
-while$ -- 8
-width$ -- 4
-write$ -- 32
+while$ -- 16
+width$ -- 6
+write$ -- 54
 (There was 1 warning)
