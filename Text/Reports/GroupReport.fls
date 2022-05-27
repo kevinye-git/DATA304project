@@ -745,6 +745,11 @@ INPUT ./fig4.pdf
 INPUT fig4.pdf
 INPUT ./fig4.pdf
 INPUT ./fig4.pdf
+INPUT ./GroupReport.bbl
+INPUT GroupReport.bbl
+INPUT ./GroupReport.bbl
+INPUT GroupReport.bbl
+INPUT c:/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT GroupReport.aux
 INPUT ./GroupReport.out
 INPUT ./GroupReport.out
@@ -765,3 +770,4 @@ INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
