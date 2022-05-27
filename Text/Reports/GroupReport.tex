@@ -10,6 +10,7 @@
 \usepackage{amsmath}
 \usepackage{float} % here for H placement parameter
 \usepackage{hyperref}
+\usepackage{siunitx}
 
 \font\myfont=cmr12 at 100pt
 \title{\Huge DATA304 Project Group 4:\\
@@ -47,36 +48,41 @@ getting the read data file to work. Patrick
 
 We tried to approximate "inter-arrival time" and "service time" using the following 12 Distributions: Weibull Minimum Extreme Value distribution, Normal distribution, Weibull Maximum Extreme Value distribution, Beta distribution, Inverse Gaussian distribution, Uniform distribution, Gamma distribution, Exponential distribution, Log-normal distribution, Pearson Type III distribution, Triangular distribution, Erlang distribution. After fitting different distributions, we checked the Goodness of fit based on Chi-square Statistics. The outputs for "inter-arrival time" sorted in order of Goodness of fit looks like this: 
 
+\sisetup{round-mode = places, round-precision = 3}
+
 \begin{table}[H]
-    \centering
     \caption{Distributions listed by Betterment of fit}
-    \begin{tabu}{*{2}{X[c]}}
+    \label{tab:Inter-arrival Best Fit}
+    \begin{center}
+    \begin{tabular}{c S}
         \toprule
         \textbf{Distribution} & \textbf{chi square}\\
         \midrule
-        Pearson Type III distribution & 9.155252\\
-        Weibull Minimum Extreme Value distribution & 13.245287\\
-        Beta distribution & 21.708357\\
-        Log Normal distribution & 25.596288\\
-        Inverse Gaussian distribution & 29.389634\\
-        Exponential distribution & 29.515278\\
-        Gamma distribution & 48.359331\\
-        Triangular distribution & 209.930441\\
-        Normal distribution & 332.531278\\
-        Uniform distribution & 510.690318\\
-        Erlang distribution & 672.400334\\
-        Weibull Maximum Extreme Value distribution & 1137.915014\\
+        Pearson Type III distribution & 9.155\\
+        Weibull Minimum Extreme Value distribution & 13.245\\
+        Beta distribution & 21.708\\
+        Log Normal distribution & 25.596\\
+        Inverse Gaussian distribution & 29.390\\
+        Exponential distribution & 29.515\\
+        Gamma distribution & 48.359\\
+        Triangular distribution & 209.930\\
+        Normal distribution & 332.531\\
+        Uniform distribution & 510.690\\
+        Erlang distribution & 672.400\\
+        Weibull Maximum Extreme Value distribution & 1137.915\\
         \bottomrule
-    \end{tabu}
-    \label{tab:Inter-arrival Best Fit}
+    \end{tabular}
+    \end{center}
 \end{table}
 
 The outputs for "service time" sorted in order of Goodness of fit looks like this:
 
-\begin{table}[h!]
-    \centering
+
+\begin{table}[H]
     \caption{Distributions listed by Betterment of fit}
-    \begin{tabu}{*{2}{X[c]}}
+    \label{tab:Service Best Fit}
+    \begin{center}
+    \begin{tabular}{c S}
         \toprule
         \textbf{Distribution} & \textbf{chi square}\\
         \midrule
@@ -93,15 +99,15 @@ The outputs for "service time" sorted in order of Goodness of fit looks like thi
         Uniform distribution & 305.594183\\
         Weibull Maximum Extreme Value distribution & 1080.829277\\
         \bottomrule
-    \end{tabu}
-    \label{tab:Service Best Fit}
+    \end{tabular}
+    \end{center}
 \end{table}
 
 The Chi-square statistics suggest that the Pearson Type III distribution best approximates 'inter-arrival time'. We can also see that Beta distribution is the best fit for 'service time'. The python code using the Scipy Library to fit the distribution is from here:\href{https://github.com/mungoliabhishek/Distribution-Fitting-Used_Car_Dataset/blob/master/Workbook.ipynb}{Distribution Fitting Code} Suppose we had more time to do this part. In that case, we will add more distributions to fit our data and find a better fit distribution of the interarrival/service times. Furthermore, we can also use the Anderson-Darling test or other goodness-of-fit tests to compare whether we will get the same results.
 
 \subsection{Histogram plots for visual evaluation (Patrick)}
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
@@ -126,7 +132,7 @@ The inter-arrival is the interval of time between each arrival. Assuming that th
 The service times defines as the time required to serve a customer. 
 These assumptions are further confirmed above by the histograms of the observations. We have observed the arrival of customers for a few hours.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
@@ -152,10 +158,10 @@ The second pair of histograms above are fitted with the best fit distributions. 
 
 \subsection{Performance Measures of collected data (Tama)}
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \caption{This is the caption that goes at the top of the table}
-    \begin{tabu}{*{2}{X[c]}}
+    \begin{tabu}{X S}
         \toprule
         \textbf{Performance Measures} & \textbf{Values calculated from data}\\
         \midrule
@@ -174,16 +180,16 @@ Firstly, we can see that the average time that a customer spent at the café ser
 
 The performance measure of effective arrival rate corresponds to the rate at which customers enter the service unit. We can see that 0.0084 customers entered the café per second. The correlates to 30.38 customers coming to the café per hour.
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \caption{This is the caption that goes at the top of the table}
-    \begin{tabu}{*{2}{X[c]}}
+    \begin{tabu}{X S}
         \toprule
         \textbf{Other parameters} & \textbf{Values calculated from data} \\
         \midrule
-        Average Inter-arrival time $\frac{1}{\lambda}$ (seconds) & 120.329  \\
-        Average Service time, $W_s$ (seconds) & 120.77  \\
-        Average Queue Time, $W_q$ (seconds) & 19.295  \\
+        Average Inter-arrival time $\frac{1}{\lambda}$ (seconds) & 120.32945045312502  \\
+        Average Service time, $W_s$ (seconds) & 120.77890398148169  \\
+        Average Queue Time, $W_q$ (seconds) & 19.29576795987645  \\
         \bottomrule
     \end{tabu}
     \label{tab:Original Data Other}
@@ -242,17 +248,17 @@ $$
 
 Upon generating all the values (check the table below), we have used the formula to compare to the original data we’ve gathered. This is used to confirm that the values from the M1 model are correct after doing the math.
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \caption{Comparing performance measures of Collected data and M1 model}
-    \begin{tabu}{*{3}{X[c]}}
+    \begin{tabu}{X S S S}
         \toprule
-        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M1 model}\\
+        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M1 model}& \textbf{LRE}\\
         \midrule
-        $W$ & 140.07 & 124.33\\
-        $L$ & 1.1819 & 1.0435\\
-        $B$ & 0.61148 & 0.63064\\
-        $\lambda_{\text{eff}}$ & 0.0084381 & 0.0083952\\
+        Average time in system (seconds), $W$ & 140.07467194135813 & 124.33303596116097 & 0.9493097487424857\\
+        Average number of customers in the system, $L$ & 1.1819665982792091 & 1.0435912057915153 & 0.9315463380768094\\
+        Proportion of time servers are busy, $B$ & 0.6114848739024165 & 0.641133566988506 & 1.314380164078804\\
+        Effective arrival rate (per second), $\lambda_{\text{eff}}$ & 0.008438117911666687 & 0.00839529474026536 & 2.2945667626263146\\
         \bottomrule
     \end{tabu}
     \label{tab:M1}
@@ -269,14 +275,14 @@ The M2 model is a simulation model developed using SimPy to model the LAB cafe c
 \begin{table}[H]
     \centering
     \caption{Comparing performance measures of Collected data and M2 model}
-    \begin{tabu}{*{3}{X[c]}}
+    \begin{tabu}{X S S S}
         \toprule
-        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M2 model}\\
+        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M2 model}& \textbf{LRE}\\
         \midrule
-        $W$ & 140.07 & 143.28\\
-        $L$ & 1.1819 & 1.6283\\
-        $B$ & 0.61148 & 0.71400\\
-        $\lambda_{\text{eff}}$ & 0.0084381 & 0.011347\\
+        Average time in system (seconds), $W$ & 140.07467194135813 & 143.28751362199432 & 1.6394702886840742\\
+        Average number of customers in the system, $L$ & 1.1819665982792091 & 1.6283817237073634 & 0.4228663028617897\\
+        Proportion of time servers are busy, $B$ & 0.6114848739024165 & 0.7140026917524969 & 0.7755863651011485\\
+        Effective arrival rate (per second), $\lambda_{\text{eff}}$ & 0.008438117911666687 & 0.011347266899941985 & 0.4624796261431971\\
         \bottomrule
     \end{tabu}
     \label{tab:M2}
@@ -288,17 +294,17 @@ From the table above, we can see that the estimated W from the M2 model has a di
 
 \subsection{M3 model (Kevin)}
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \caption{Comparing performance measures of Collected data and M3 model}
-    \begin{tabu}{*{3}{X[c]}}
+    \begin{tabu}{X S S S}
         \toprule
-        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M3 model}\\
+        \textbf{Performance Measures} & \textbf{Collected Data} & \textbf{M3 model}& \textbf{LRE}\\
         \midrule
-        $W$ & 140.07 & 127.14\\
-        $L$ & 1.1819 & 1.0853\\
-        $B$ & 0.61148 & 0.62465\\
-        $\lambda_{\text{eff}}$ & 0.0084381 & 0.0085284\\
+        Average time in system (seconds), $W$ & 140.07467194135813 & 127.14403384042575 & 1.0347396570447596\\
+        Average number of customers in the system, $L$ & 1.1819665982792091 & 1.0853339772074488 & 1.0874814442563059\\
+        Proportion of time servers are busy, $B$ & 0.6114848739024165 & 0.6246586034558348 & 1.6666769750434784\\
+        Effective arrival rate (per second), $\lambda_{\text{eff}}$ & 0.008438117911666687 & 0.00852846013566267 & 1.9703548122023773\\
         \bottomrule
     \end{tabu}
     \label{tab:M3}
