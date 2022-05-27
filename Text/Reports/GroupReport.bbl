@@ -7,4 +7,14 @@ Mungoli Abhishek.
   \url{https://github.com/mungoliabhishek/Distribution-Fitting-Used_Car_Dataset},
   2020.
 
+\bibitem{hillier1967introduction}
+Frederick~S Hillier and Gerald~J Lieberman.
+\newblock Introduction to operations research.
+\newblock 2001.
+
+\bibitem{little1961proof}
+John~DC Little.
+\newblock A proof for the queuing formula: L= $\lambda$ w.
+\newblock {\em Operations research}, 9(3):383--387, 1961.
+
 \end{thebibliography}
