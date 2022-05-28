@@ -30,4 +30,14 @@ John~DC Little.
 \newblock A proof for the queuing formula: L= $\lambda$ w.
 \newblock {\em Operations research}, 9(3):383--387, 1961.
 
+\bibitem{drawemp}
+Binh Nguyen.
+\newblock draw\_emp.py file.
+\newblock \url{https://blackboard.vuw.ac.nz/}, 2022.
+
+\bibitem{monitor}
+Binh Nguyen.
+\newblock monitor.py file.
+\newblock \url{https://blackboard.vuw.ac.nz/}, 2022.
+
 \end{thebibliography}

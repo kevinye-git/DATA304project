@@ -26,21 +26,17 @@
 
 \section{Introduction}
 
-\subsection{Description of LAB Cafe and the main objective of project}
 The LAB Food and Beverage Co. is a Cafe located at ground level of the Easterfield Building at Kelburn campus of Victoria University of Wellington 6012, New Zealand. As part of a project for DATA304 course at Victoria University, our group decided to model this cafe system by analyzing customer interarrival time and service times. 
 
-The cafe is open from 7.30am to 3pm every weekday. There are 3 servers by the counter ready to serve. The cafe sells a variety of coffee and brunch items such as rolls, sandwiches, salads, noodles etc. 
+The cafe is open from 7.30am to 3pm every weekday. There are 3 servers by the counter ready to serve. The cafe sells a variety of coffee and brunch items such as rolls, sandwiches, salads, noodles etc. The manager of the cafe is Daniel and he can be contacted from email imdan97@outlook.com or by mobile 0226775474.
 
 The one of the main objectives of this project is to model the interarrival time and service times of customers by fitting a best fit distribution to these times. The other main objective is to develop SimPy models in Python to be able to simulate the cafe system and assess how good each model is.
 
-\subsection{Customer interaction with the system - Vivian}
 Customers need to choose one of the three servers to order and pay, and they will wait if there is a queue. After ordering they will stay in the café till the staff call their name means the order is ready. The cafe's main customers are students and staff from Victoria University Kelburn Campus. 
 
-\subsection{Process of data collection}
-The data was collected over a period of about 11 hours. This was across 4 separate days. To collect the data we used a Python program called monitor.py, which can be found in the repository. This program automatically recorded times which made it easier for us to be able to monitor the system. For each arrival, we recorded the arrival time, the time that the service began and the completion of the service. In total we recorded 324 customers at the cafe.
+The data was collected over a period of about 11 hours. This was across 4 separate days. To collect the data we used a Python program called monitor.py, which can be found in the repository. This program automatically recorded times which made it easier for us to be able to monitor the system. For each arrival, we recorded the arrival time, the time that the service began and the completion of the service. In total we recorded 324 customers at the cafe. We used a python script called monitor.py to assist in recording times which was provided by our lecturer\cite{monitor} from DATA304.
 
-\subsection{Process of data cleaning}
-After collecting the data, we hav noticed there were some missing values in the file, such as when customers arrive, get served, and depart. This was easily fixed as we remembered at which point the values were supposed to go. There were also some doubled values that were put by mistake which was also easily fixed. We then produced a read_data file which would read each individual file and separate the interarrival times, and service times. To make it more efficient, we edited the file to have it read multiple files at once. Not only that, we have updated it so it calculates some of the performance measures like W and L for us to compare our models to.
+After collecting the data, we hav noticed there were some missing values in the file, such as when customers arrive, get served, and depart. This was easily fixed as we remembered at which point the values were supposed to go. There were also some doubled values that were put by mistake which was also easily fixed. We then produced a read\_data file which would read each individual file and separate the interarrival times, and service times. To make it more efficient, we edited the file to have it read multiple files at once. Not only that, we have updated it so it calculates some of the performance measures like W and L for us to compare our models to.
 
 Note: The structure of the git repository that contains this report and all other relevant files were structured according to here\cite{frery2020badging}.
 
@@ -323,7 +319,7 @@ From the table above, we can see that the estimated W from the M2 model has a di
     \label{tab:M3}
 \end{table}
 
-The M3 model is a simulation model developed using SimPy to model the LAB cafe customer waiting and serving system. The distribution of interarrival and service times are modelled after the empirical distributions of the interarrival times and services times recorded from the original data. From the M3 model produced some performance measures estimates in the table above which we can compare to the original data performance measure estimates to gauge how well of a fit this M3 model is at simulating the nature of the real life system.
+The M3 model is a simulation model developed using SimPy to model the LAB cafe customer waiting and serving system. The distribution of interarrival and service times are modelled after the empirical distributions of the interarrival times and services times recorded from the original data. A python script called draw\_emp.py was provided by our lecturer\cite{drawemp} from DATA304 to assist in building this model. From the M3 model produced some performance measures estimates in the table above which we can compare to the original data performance measure estimates to gauge how well of a fit this M3 model is at simulating the nature of the real life system.
 
 From the table we can see that estimated W from the M3 model has a difference of approximately 13 to the estimate provided by the original data collected. The L difference between the two estimations by the colletced data and the M3 model is about 0.1. The difference in the B, proportion of time servers are busy was 0.01 between the two estimates of the collected data and the M3 model. The effective arrival rate $\lambda_{\text{eff}}$ has a difference of 0.0001 approximately between the original data and the M3 estimate. We can see that The M3 model is a decent fit for the original data as the differences are around about $10\%$ of the original data estimates.
 
