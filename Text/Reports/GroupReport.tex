@@ -40,8 +40,7 @@ Customers need to choose one of the three servers to order and pay, and they wil
 The data was collected over a period of about 11 hours. This was across 4 separate days. To collect the data we used a Python program called monitor.py, which can be found in the repository. This program automatically recorded times which made it easier for us to be able to monitor the system. For each arrival, we recorded the arrival time, the time that the service began and the completion of the service. In total we recorded 324 customers at the cafe.
 
 \subsection{Process of data cleaning}
-missing values 
-getting the read data file to work. Patrick
+After collecting the data, we hav noticed there were some missing values in the file, such as when customers arrive, get served, and depart. This was easily fixed as we remembered at which point the values were supposed to go. There were also some doubled values that were put by mistake which was also easily fixed. We then produced a read_data file which would read each individual file and separate the interarrival times, and service times. To make it more efficient, we edited the file to have it read multiple files at once. Not only that, we have updated it so it calculates some of the performance measures like W and L for us to compare our models to.
 
 Note: The structure of the git repository that contains this report and all other relevant files were structured according to here\cite{frery2020badging}.
 
