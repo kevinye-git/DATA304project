@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.21)  2 JUN 2022 20:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.21)  2 JUN 2022 20:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,7 +527,7 @@ LaTeX Warning: Citation `almiron2010numerical' on page 6 undefined on input line
 
 [6]
 
-LaTeX Warning: Citation `drawemp' on page 7 undefined on input line 323.
+LaTeX Warning: Citation `drawemp' on page 7 undefined on input line 321.
 
 No file GroupReport.bbl.
 [7] [8] (./GroupReport.aux)
@@ -549,13 +549,13 @@ Package rerunfilecheck Info: Checksums for `GroupReport.out':
 Here is how much of TeX's memory you used:
  15606 strings out of 478268
  299921 string characters out of 5846347
- 575869 words of memory out of 5000000
+ 576869 words of memory out of 5000000
  33625 multiletter control sequences out of 15000+600000
  476155 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,20n,79p,1050b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,20n,79p,1144b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on GroupReport.pdf (8 pages, 268933 bytes).
+Output written on GroupReport.pdf (8 pages, 269251 bytes).
 PDF statistics:
  190 PDF objects out of 1000 (max. 8388607)
  141 compressed objects within 2 object streams

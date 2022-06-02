@@ -6,8 +6,8 @@
   (generated)
   "GroupReport.bbl"
   "GroupReport.blg"
-["pdflatex"] 1654159207 "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" "GroupReport.pdf" "GroupReport" 1654159207
-  "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" 1654159199 19513 42c28989dc83ec76132d924a5b069d85 ""
+["pdflatex"] 1654159735 "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" "GroupReport.pdf" "GroupReport" 1654159735
+  "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" 1654159726 19906 52856cc28c72dd390bcf55e474b267fe ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -114,10 +114,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653100541 2826437 3d17464a9e6fe47ce09a3cf6ec90ecaa ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "GroupReport.aux" 1654159207 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "GroupReport.aux" 1654159735 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "GroupReport.bbl" 0 -1 0 "bibtex GroupReport"
   "GroupReport.out" 0 -1 0 "pdflatex"
-  "GroupReport.tex" 1654159199 19513 42c28989dc83ec76132d924a5b069d85 ""
+  "GroupReport.tex" 1654159726 19906 52856cc28c72dd390bcf55e474b267fe ""
   "fig1.pdf" 1654158151 68639 adac4b4706f4411975d7f80df2a053e0 ""
   "fig2.pdf" 1654158151 68588 d28571b6eed8ba825a184c8d03352330 ""
   "fig3.pdf" 1654158151 69825 245f97f4b1575f17c58bee648744b6d4 ""
