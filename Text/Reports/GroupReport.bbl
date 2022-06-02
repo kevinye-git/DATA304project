@@ -1,0 +1,43 @@
+\begin{thebibliography}{1}
+
+\bibitem{git}
+Mungoli Abhishek.
+\newblock Distribution fitting used car dataset.
+\newblock
+  \url{https://github.com/mungoliabhishek/Distribution-Fitting-Used_Car_Dataset},
+  2020.
+
+\bibitem{almiron2010numerical}
+Marcelo~G Almiron, Bruno Lopes, Alyson~LC Oliveira, Antonio~C Medeiros, and
+  Alejandro~C Frery.
+\newblock On the numerical accuracy of spreadsheets.
+\newblock {\em Journal of Statistical Software}, 34:1--29, 2010.
+
+\bibitem{frery2020badging}
+Alejandro~C Frery, Luis Gomez, and Antonio~C Medeiros.
+\newblock A badging system for reproducibility and replicability in remote
+  sensing research.
+\newblock {\em IEEE Journal of Selected Topics in Applied Earth Observations
+  and Remote Sensing}, 13:4988--4995, 2020.
+
+\bibitem{hillier1967introduction}
+Frederick~S Hillier and Gerald~J Lieberman.
+\newblock Introduction to operations research.
+\newblock 2001.
+
+\bibitem{little1961proof}
+John~DC Little.
+\newblock A proof for the queuing formula: L= $\lambda$ w.
+\newblock {\em Operations research}, 9(3):383--387, 1961.
+
+\bibitem{drawemp}
+Binh Nguyen.
+\newblock draw\_emp.py file.
+\newblock \url{https://blackboard.vuw.ac.nz/}, 2022.
+
+\bibitem{monitor}
+Binh Nguyen.
+\newblock monitor.py file.
+\newblock \url{https://blackboard.vuw.ac.nz/}, 2022.
+
+\end{thebibliography}

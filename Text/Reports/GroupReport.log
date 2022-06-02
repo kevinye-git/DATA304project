@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.21)  2 JUN 2022 20:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.21)  2 JUN 2022 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,6 +446,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 21.
 LaTeX Info: Redefining \pageref on input line 21.
 LaTeX Info: Redefining \nameref on input line 21.
+ (./GroupReport.out) (./GroupReport.out)
 \@outlinefile=\write3
 \openout3 = `GroupReport.out'.
 
@@ -461,52 +462,29 @@ File: translations-basic-dictionary-english.trsl (english translation file `tran
 Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 21.
  [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation `monitor' on page 2 undefined on input line 37.
-
-
-LaTeX Warning: Citation `frery2020badging' on page 2 undefined on input line 41.
-
-[2]
-
-LaTeX Warning: Citation `git' on page 3 undefined on input line 104.
-
-<fig1.pdf, id=21, 417.7206pt x 273.1806pt>
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<fig1.pdf, id=78, 417.7206pt x 273.1806pt>
 File: fig1.pdf Graphic file (type pdf)
 <use fig1.pdf>
 Package pdftex.def Info: fig1.pdf  used on input line 112.
 (pdftex.def)             Requested size: 211.38832pt x 138.24063pt.
-<fig2.pdf, id=22, 417.7206pt x 273.1806pt>
+<fig2.pdf, id=79, 417.7206pt x 273.1806pt>
 File: fig2.pdf Graphic file (type pdf)
 <use fig2.pdf>
 Package pdftex.def Info: fig2.pdf  used on input line 119.
 (pdftex.def)             Requested size: 211.38832pt x 138.24063pt.
-[3]
-
-/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex:129: LaTeX Error: Unicode character ​ (U+200B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 ...a and it produced these two histograms​
-                                                  .
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-<fig3.pdf, id=32, 417.46985pt x 287.88419pt>
+ [3]
+<fig3.pdf, id=91, 417.46985pt x 287.88419pt>
 File: fig3.pdf Graphic file (type pdf)
 <use fig3.pdf>
 Package pdftex.def Info: fig3.pdf  used on input line 138.
 (pdftex.def)             Requested size: 211.38832pt x 145.76912pt.
-<fig4.pdf, id=33, 417.7206pt x 273.1806pt>
+<fig4.pdf, id=92, 417.7206pt x 273.1806pt>
 File: fig4.pdf Graphic file (type pdf)
 <use fig4.pdf>
 Package pdftex.def Info: fig4.pdf  used on input line 145.
 (pdftex.def)             Requested size: 211.38832pt x 138.24063pt.
-[4 <./fig1.pdf> <./fig2.pdf
+ [4 <./fig1.pdf> <./fig2.pdf
 
 pdfTeX warning: pdflatex (file ./fig2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./fig3.pdf
@@ -515,50 +493,23 @@ pdfTeX warning: pdflatex (file ./fig3.pdf): PDF inclusion: multiple pdfs with pa
 > <./fig4.pdf
 
 pdfTeX warning: pdflatex (file ./fig4.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [5]
-
-LaTeX Warning: Citation `hillier1967introduction' on page 6 undefined on input line 246.
-
-
-LaTeX Warning: Citation `little1961proof' on page 6 undefined on input line 246.
-
-
-LaTeX Warning: Citation `almiron2010numerical' on page 6 undefined on input line 250.
-
-[6]
-
-LaTeX Warning: Citation `drawemp' on page 7 undefined on input line 321.
-
-No file GroupReport.bbl.
-[7] [8] (./GroupReport.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `GroupReport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `GroupReport.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  C6BAF13D14ADFD11E845524FAB50353F;2141.
+>] [5] [6] (./GroupReport.bbl [7]) [8] (./GroupReport.aux)
+Package rerunfilecheck Info: File `GroupReport.out' has not changed.
+(rerunfilecheck)             Checksum: C6BAF13D14ADFD11E845524FAB50353F;2141.
  ) 
 Here is how much of TeX's memory you used:
- 15606 strings out of 478268
- 299921 string characters out of 5846347
- 576869 words of memory out of 5000000
- 33625 multiletter control sequences out of 15000+600000
- 476155 words of font info for 52 fonts, out of 8000000 for 9000
+ 15646 strings out of 478268
+ 300510 string characters out of 5846347
+ 579190 words of memory out of 5000000
+ 33649 multiletter control sequences out of 15000+600000
+ 476669 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,20n,79p,1144b,755s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on GroupReport.pdf (8 pages, 269251 bytes).
+ 70i,20n,79p,1144b,873s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on GroupReport.pdf (8 pages, 300845 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 266 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

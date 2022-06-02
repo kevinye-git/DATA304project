@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex GroupReport"] 0 "GroupReport.aux" "GroupReport.bbl" "GroupReport" 0
+["bibtex GroupReport"] 1654160029 "GroupReport.aux" "GroupReport.bbl" "GroupReport" 1654160096
   "/usr/local/texlive/2022/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "GroupReport.aux" 0 -1 0 "pdflatex"
+  "GroupReport.aux" 1654160096 5937 f2a37d0160f9aebaaa0a4ede0110c43e "pdflatex"
   "references.bib" 1654158151 1727 cc52934b5d358d5b721fbd97733b4446 ""
   (generated)
   "GroupReport.bbl"
   "GroupReport.blg"
-["pdflatex"] 1654159735 "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" "GroupReport.pdf" "GroupReport" 1654159735
-  "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" 1654159726 19906 52856cc28c72dd390bcf55e474b267fe ""
+["pdflatex"] 1654160094 "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" "GroupReport.pdf" "GroupReport" 1654160096
+  "/Users/viviandong/Desktop/COMP312/DATA304project-1/Text/Reports/GroupReport.tex" 1654160093 19903 cda84e9e1e36764b6b79fd8d764df574 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -27,6 +27,8 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1136768653 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb" 1248133631 32166 b0c356b15f19587482a9217ce1d8fa67 ""
@@ -44,6 +46,8 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1248133631 37944 359e864bd06cde3b1cf57bb20757fb06 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
   "/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -114,10 +118,10 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1653100541 2826437 3d17464a9e6fe47ce09a3cf6ec90ecaa ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "GroupReport.aux" 1654159735 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "GroupReport.bbl" 0 -1 0 "bibtex GroupReport"
-  "GroupReport.out" 0 -1 0 "pdflatex"
-  "GroupReport.tex" 1654159726 19906 52856cc28c72dd390bcf55e474b267fe ""
+  "GroupReport.aux" 1654160096 5937 f2a37d0160f9aebaaa0a4ede0110c43e "pdflatex"
+  "GroupReport.bbl" 1654160029 1306 b3962cedad9392475f9721a531644b4f "bibtex GroupReport"
+  "GroupReport.out" 1654160096 2141 c6baf13d14adfd11e845524fab50353f "pdflatex"
+  "GroupReport.tex" 1654160093 19903 cda84e9e1e36764b6b79fd8d764df574 ""
   "fig1.pdf" 1654158151 68639 adac4b4706f4411975d7f80df2a053e0 ""
   "fig2.pdf" 1654158151 68588 d28571b6eed8ba825a184c8d03352330 ""
   "fig3.pdf" 1654158151 69825 245f97f4b1575f17c58bee648744b6d4 ""
