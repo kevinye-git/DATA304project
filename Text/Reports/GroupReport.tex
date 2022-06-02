@@ -101,7 +101,7 @@ The outputs for "service time" sorted in order of Goodness of fit looks like thi
     \end{center}
 \end{table}
 
-The Chi-square statistics suggest that the Pearson Type III distribution best approximates 'inter-arrival time'. We can also see that Beta distribution is the best fit for 'service time'. The python code using the Scipy Library to fit the distribution is from here\cite{git} Suppose we had more time to do this part. In that case, we will add more distributions to fit our data and find a better fit distribution of the interarrival/service times. Furthermore, we can also use the Anderson-Darling test or other goodness-of-fit tests to compare whether we will get the same results.
+Since the test measures how a model compares to actual observed data, the Chi-square statistics suggest that the Pearson Type III distribution best approximates inter-arrival time as it has the smallest error score of 9.155. We can see that Beta distribution has the smallest Chi-square statistics value of 1.231, which indicates that Beta distribution is the best fit for service time. The python code using the Scipy Library to fit the distribution is from here\cite{git} Suppose we had more time to do this part. In that case, we will add more distributions to fit our data and find a better fit distribution of the interarrival/service times. And use scipy.stats.chisquare function instead of using the math formula to calculate the Chi-Square test so that I can consider both test output and p-value. Furthermore, we can also use the Anderson-Darling test or other goodness-of-fit tests to compare whether we will get the same results.
 
 \subsection{Histogram plots for visual evaluation (Patrick)}
 
@@ -125,8 +125,8 @@ The Chi-square statistics suggest that the Pearson Type III distribution best ap
     \label{fig:two-figs}
 \end{figure}
 
-Here, we have divided the inter-arrival time and the service time data into a number of phases, such that the time occupied by each phase has a negative exponential distribution. 
-Using the Matplotlib.pyplot.hist function for python, I plotted the data and it produced these two histograms​
+Here, we have divided the inter-arrival time and the service time data into a number of phases, such that the time occupied by each phase has a negative exponential distribution.
+Using the Matplotlib.pyplot.hist function for python, I plotted the data and it produced these two histograms​.
 The inter-arrival is the interval of time between each arrival. Assuming that the arrivals are independent, their distribution is exponential.
 The service times defines as the time required to serve a customer. 
 These assumptions are further confirmed above by the histograms of the observations. We have observed the arrival of customers for a few hours.
