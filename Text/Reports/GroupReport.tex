@@ -28,17 +28,85 @@
 
 The LAB Food and Beverage Co. is a Cafe located at ground level of the Easterfield Building at Kelburn campus of Victoria University of Wellington 6012, New Zealand. As part of a project for DATA304 course at Victoria University, our group decided to model this cafe system by analyzing customer interarrival time and service times. 
 
-The cafe is open from 7.30am to 3pm every weekday. There are 3 servers by the counter ready to serve. The cafe sells a variety of coffee and brunch items such as rolls, sandwiches, salads, noodles etc. The manager of the cafe is Daniel and he can be contacted from email imdan97@outlook.com or by mobile 0226775474.
+The aims of this study were to measure, analyse, and model this real queueing system. We looked to analyse the customer arrival process, the service channel discipline and service times for this chosen system. From here we looked to model the interarrival time and service times of customers by fitting a best fit distribution to these times. We then went on to develop SimPy models in Python to be able to simulate the cafe system and assess how good each model is.
 
-The one of the main objectives of this project is to model the interarrival time and service times of customers by fitting a best fit distribution to these times. The other main objective is to develop SimPy models in Python to be able to simulate the cafe system and assess how good each model is.
+The cafe is open from 7.30am to 3pm every weekday and its main customers are students and staff from the university. The cafe sells a variety of coffee and brunch items such as rolls, sandwiches, salads, noodles etc. The manager of the cafe is Daniel and he can be contacted from email imdan97@outlook.com or by mobile 0226775474.
 
-Customers need to choose one of the three servers to order and pay, and they will wait if there is a queue. After ordering they will stay in the café till the staff call their name means the order is ready. The cafe's main customers are students and staff from Victoria University Kelburn Campus. 
-
-The data was collected over a period of about 11 hours. This was across 4 separate days. To collect the data we used a Python program called monitor.py, which can be found in the repository. This program automatically recorded times which made it easier for us to be able to monitor the system. For each arrival, we recorded the arrival time, the time that the service began and the completion of the service. In total we recorded 324 customers at the cafe. We used a python script called monitor.py to assist in recording times which was provided by our lecturer\cite{monitor} from DATA304.
-
-After collecting the data, we hav noticed there were some missing values in the file, such as when customers arrive, get served, and depart. This was easily fixed as we remembered at which point the values were supposed to go. There were also some doubled values that were put by mistake which was also easily fixed. We then produced a read\_data file which would read each individual file and separate the interarrival times, and service times. To make it more efficient, we edited the file to have it read multiple files at once. Not only that, we have updated it so it calculates some of the performance measures like W and L for us to compare our models to.
 
 Note: The structure of the git repository that contains this report and all other relevant files were structured according to here\cite{frery2020badging}.
+
+
+\section{Data Collection Process}
+
+\subsection{Collecting the Data (Tama)}
+
+On March 28th, Kevin gained permission from the manager at LAB Cafe for us to collect the customer arrival and service data.
+
+
+At the café there are 3 servers by the counter ready to serve. When a customer arrives they choose a server to order. If all the servers are busy the customer will wait in a queue. After ordering the customer waits at the café for their order to be ready. They are notified by a staff member when their order is ready, then they will depart the service unit. In order to observe this system we collected data on the time at which the customer arrived, the time at which their service began and the time at which they had finished their service. We catergorised each of these events as follows:
+
+Customer Arrival (a) - The timing at which a customer arrives at the café with the intention to order.
+
+Service Begin (s) - Moment when the customer begins to place their order with a server.
+
+Service Completion/Departure (d) - Time when the customer receives the order and proceeds to leave the café.
+
+
+This customer data was collected this data over a period of about 11 hours, which was split across 4 separate days. The times at which the data was recorded was between 9am and 3pm. In order to collect the data we used a Python program called monitor.py which was provided by our DATA304 lecturer\cite{monitor}. I had to edit this program slightly so it would be effective to be used more the most recent version of python. This program automatically recorded times which made it easier for us to be able to monitor the system effectively.  For each customer, we recorded 3 seperate times for their arrival, service beginning and departure. In total we recorded 324 customers at the cafe. 
+
+The monitor.py program was very useful for us to be able to record the data. It allowed us to pay more attention to the customer flow. As the cafe is in a public area it sometimes became different to recognise who was at the cafe and who had no intention to be served at the cafe. It also allowed us to be able to monitor the different customers effectively so was had the correct service times for each one.
+
+
+\subsection{Cleaning Data and Reading Data}
+
+After collecting the data, it was noticed there were some missing and incorrect values in the file; such as when customers arrive, get served, and depart. There were also some doubled values that were put by mistake which was also easily fixed. This meant we had to clean the raw data to fix these incorrect and missing values. This required some intiative from the group to realise where the mistakes were and what the corrected values were meant to be. In addition to this we require the data on how we tracked and monitored the customer to all be in the same format. This was so we could then produce a read\_data file which would read each individual file and separate the interarrival times, and service times. To make it more efficient, we edited the file to have it read multiple files at once. Not only that, we have updated it so it calculates some of the performance measures like W and L for us to compare our models to.
+
+
+\section{Performance Measures of collected data (Tama)}
+
+\begin{table}[H]
+    \centering
+    \caption{Performance Measures of collected data}
+    \begin{tabu}{X S}
+        \toprule
+        \textbf{Performance Measures} & \textbf{Values calculated from data}\\
+        \midrule
+        Average time in system (seconds), $W$   & 140.07 \\
+        Average number of customers in the system, $L$ & 1.1819\\
+        Proportion of time servers are busy, $B$ & 0.61148  \\
+        Effective arrival rate (per second), $\lambda_{\text{eff}}$ & 0.0084381\\
+        \bottomrule
+    \end{tabu}
+    \label{tab:Original Data PF}
+\end{table}
+
+Assessing the performance measures of the collected data is key modelling the performance of the servicing unit. As shown in the tables above there were seven key performance measures assessed from the collected data. 
+
+Firstly, we can see that the average time that a customer spent at the café service unit, meaning the total time of queuing plus service, was 140,07 seconds. The average number of customers in the system at any given point was 1.18. We can see from the data that the server at the café was busy serving customers 61.15% of the time. The remaining time is spent with no customers being served at the café.
+
+The performance measure of effective arrival rate corresponds to the rate at which customers enter the service unit. We can see that 0.0084 customers entered the café per second. The correlates to 30.38 customers coming to the café per hour.
+
+\begin{table}[H]
+    \centering
+    \caption{Other calculated parameters from collected data}
+    \begin{tabu}{X S}
+        \toprule
+        \textbf{Other parameters} & \textbf{Values calculated from data} \\
+        \midrule
+        Average Inter-arrival time $\frac{1}{\lambda}$ (seconds) & 120.32945045312502  \\
+        Average Service time, $W_s$ (seconds) & 120.77890398148169  \\
+        Average Queue Time, $W_q$ (seconds) & 19.29576795987645  \\
+        \bottomrule
+    \end{tabu}
+    \label{tab:Original Data Other}
+\end{table}
+
+The average inter-arrival time is the average time difference between arrival of one customer and then the next customer. It is a time elapse between the arrival of the person and one following it in the queue. The value calculated from this in the data was 120.33 seconds.
+
+The time it takes for one customer to be served is referred to as the service time. This is the time between a single customer reaching the server (no longer in the queue) and leaving the service unit. Hence it took on average 120.77s for a customer to be served at the café once they had reached the server.
+
+The average queue time is the time between a customer arriving at the service system and getting to the point at which they start to get served. They spend that time in a queue. At the café it took on average 19.295 seconds for a customer to get to the server once they had arrived at the café. Hence they spent of average 19.295 seconds in a queue at the café.
+
 
 \section{Data analysis}
 
@@ -153,55 +221,8 @@ These assumptions are further confirmed above by the histograms of the observati
 
 The second pair of histograms above are fitted with the best fit distributions. We have fitted the inter-arrival and service time histograms with a list of distributions listed by Betterment of fit. Based on the Chi-square Statistics, it suggests that Pearson3 is the best in approximating ‘inter-arrival time’ Data. For our 'service times' data, it suggests that beta distribution is the best fit for the data.
 
+
 \section{Simulation models}
-
-\subsection{Performance Measures of collected data (Tama)}
-
-\begin{table}[H]
-    \centering
-    \caption{Performance Measures of collected data}
-    \begin{tabu}{X S}
-        \toprule
-        \textbf{Performance Measures} & \textbf{Values calculated from data}\\
-        \midrule
-        Average time in system (seconds), $W$   & 140.07 \\
-        Average number of customers in the system, $L$ & 1.1819\\
-        Proportion of time servers are busy, $B$ & 0.61148  \\
-        Effective arrival rate (per second), $\lambda_{\text{eff}}$ & 0.0084381\\
-        \bottomrule
-    \end{tabu}
-    \label{tab:Original Data PF}
-\end{table}
-
-Assessing the performance measures of the collected data is key modelling the performance of the servicing unit. As shown in the tables above there were seven key performance measures assessed from the collected data. 
-
-Firstly, we can see that the average time that a customer spent at the café service unit, meaning the total time of queuing plus service, was 140,07 seconds. The average number of customers in the system at any given point was 1.18. We can see from the data that the server at the café was busy serving customers 61.15% of the time. The remaining time is spent with no customers being served at the café.
-
-The performance measure of effective arrival rate corresponds to the rate at which customers enter the service unit. We can see that 0.0084 customers entered the café per second. The correlates to 30.38 customers coming to the café per hour.
-
-\begin{table}[H]
-    \centering
-    \caption{Other calculated parameters from collected data}
-    \begin{tabu}{X S}
-        \toprule
-        \textbf{Other parameters} & \textbf{Values calculated from data} \\
-        \midrule
-        Average Inter-arrival time $\frac{1}{\lambda}$ (seconds) & 120.32945045312502  \\
-        Average Service time, $W_s$ (seconds) & 120.77890398148169  \\
-        Average Queue Time, $W_q$ (seconds) & 19.29576795987645  \\
-        \bottomrule
-    \end{tabu}
-    \label{tab:Original Data Other}
-\end{table}
-
-The average inter-arrival time is the average time difference between arrival of one customer and then the next customer. It is a time elapse between the arrival of the person and one following it in the queue. The value calculated from this in the data was 120.33 seconds.
-
-The time it takes for one customer to be served is referred to as the service time. This is the time between a single customer reaching the server (no longer in the queue) and leaving the service unit. Hence it took on average 120.77s for a customer to be served at the café once they had reached the server.
-
-The average queue time is the time between a customer arriving at the service system and getting to the point at which they start to get served. They spend that time in a queue. At the café it took on average 19.295 seconds for a customer to get to the server once they had arrived at the café. Hence they spent of average 19.295 seconds in a queue at the café.
-
-
-
 
 \subsection{M1 model (Patrick)}
 
