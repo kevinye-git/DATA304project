@@ -82,7 +82,7 @@ After collecting the data, it was noticed there were some missing and incorrect 
 
 Assessing the performance measures of the collected data is key modelling the performance of the servicing unit. As shown in the tables above there were seven key performance measures assessed from the collected data. 
 
-Firstly, we can see that the average time that a customer spent at the café service unit, meaning the total time of queuing plus service, was 140,07 seconds. The average number of customers in the system at any given point was 1.18. We can see from the data that the server at the café was busy serving customers 61.15% of the time. The remaining time is spent with no customers being served at the café.
+Firstly, we can see that the average time that a customer spent at the café service unit, meaning the total time of queuing plus service, was 140,07 seconds. The average number of customers in the system at any given point was 1.18. We can see from the data that the server at the café was busy serving customers 61.15\% of the time. The remaining time is spent with no customers being served at the café.
 
 The performance measure of effective arrival rate corresponds to the rate at which customers enter the service unit. We can see that 0.0084 customers entered the café per second. The correlates to 30.38 customers coming to the café per hour.
 
@@ -219,7 +219,7 @@ These assumptions are further confirmed above by the histograms of the observati
     \label{fig:two-figs2}
 \end{figure}
 
-The second pair of histograms above are fitted with the best fit distributions. We have fitted the inter-arrival and service time histograms with a list of distributions listed by Betterment of fit. Based on the Chi-square Statistics, it suggests that Pearson3 is the best in approximating ‘inter-arrival time’ Data. For our 'service times' data, it suggests that beta distribution is the best fit for the data.
+The second pair of histograms above are fitted with the best fit distributions. We have fitted the inter-arrival and service time histograms with a list of distributions listed by Betterment of fit. Based on the Chi-square Statistics, it suggests that Pearson3 is the best in approximating 'inter-arrival time' Data. For our 'service times' data, it suggests that beta distribution is the best fit for the data.
 
 
 \section{Simulation models}
@@ -266,7 +266,7 @@ $$
 
 Mathematics used were from works published on operations research\cite{hillier1967introduction}\cite{little1961proof}
 
-Upon generating all the values (check the table below), we have used the formula to compare to the original data we’ve gathered. This is used to confirm that the values from the M1 model are correct after doing the math.
+Upon generating all the values (check the table below), we have used the formula to compare to the original data we've gathered. This is used to confirm that the values from the M1 model are correct after doing the math.
 
 The log relative error is one of the easiest way to compare 2 numbers. See here\cite{almiron2010numerical} for more detail on how to use LRE, published by one of our lecturers, Alejandro.
 
@@ -319,7 +319,7 @@ The M2 model is a simulation model developed using SimPy to model the LAB cafe c
     \label{tab:M2}
 \end{table}
 
-From the table above, we can see that the estimated W from the M2 model has a difference of approximately 3.21 from the estimate provided by the original data collected. The L difference between the two estimations by the collected data and the M2 model is about 0.45. The difference in the proportion of time servers are busy (B) was 0.1 between the two estimates of the collected data and the M2 model. The effective arrival rate $\lambda_{\text{eff}}$ has a difference of 0.0029 approximately between the original data and the M2 estimate. We can see that the M2 model is a decent fit for the actual data as the differences are relatively small. But let's take a look at the LRE values. Two digits are computed correctly for Average time in the system, one digit for proportions of time servers are busy, and approximately 0 digits for the average number of customers in the system and effective arrival rate. So based on the LRE values, we could say that the M2 model isn’t the best model to simulate the system among these three models.
+From the table above, we can see that the estimated W from the M2 model has a difference of approximately 3.21 from the estimate provided by the original data collected. The L difference between the two estimations by the collected data and the M2 model is about 0.45. The difference in the proportion of time servers are busy (B) was 0.1 between the two estimates of the collected data and the M2 model. The effective arrival rate $\lambda_{\text{eff}}$ has a difference of 0.0029 approximately between the original data and the M2 estimate. We can see that the M2 model is a decent fit for the actual data as the differences are relatively small. But let's take a look at the LRE values. Two digits are computed correctly for Average time in the system, one digit for proportions of time servers are busy, and approximately 0 digits for the average number of customers in the system and effective arrival rate. So based on the LRE values, we could say that the M2 model isn't the best model to simulate the system among these three models.
 
 \subsection{M3 model (Kevin)}
 
@@ -343,15 +343,19 @@ The M3 model is a simulation model developed using SimPy to model the LAB cafe c
 
 From the table we can see that estimated W from the M3 model has a difference of approximately 13 to the estimate provided by the original data collected. The L difference between the two estimations by the colletced data and the M3 model is about 0.1. The difference in the B, proportion of time servers are busy was 0.01 between the two estimates of the collected data and the M3 model. The effective arrival rate $\lambda_{\text{eff}}$ has a difference of 0.0001 approximately between the original data and the M3 estimate. We can see that The M3 model is a decent fit for the original data as the differences are around about $10\%$ of the original data estimates.
 
+Note: all simulation models were constructed using inspiration from SimPy material from the DATA304 course.\cite{SimPy}
+
 \section{Conclusion}
 
-\subsection{Results Summary}
+To reiterate the objective, our group collected data about customer arrival and service times from the LAB café to determine their best fit distributions for interarrival times and service times. Then we compared the simulated values of 3 different models to the collected data using performance measures to determine each model's fit. 
 
+The fitted distributions were Pearson3 for interarrival times and Beta distribution for service times. This contradicts the assumption that interarrival and service times are exponentially distributed due to the Poisson Process. 
 
-\subsection{Improvements}
-\subsection{}
-\subsection{}
+Problems encountered during the project involved having to clean the raw data for missing values as sometimes there were too many customers and orders to keep track of. Lots of bug fixing in the python code to ensure results were accurate. Sometimes the computer ran out of power during monitoring days.
 
+In the future we could analyze a more complex system that could involve a max number of customers allowed in the system and the issue of customers balking when there are too many customers. We would also develop a singular metric or index that describes how well one simulation model is at simulating the data collected. Then we can compare the models against each other and determine the best model for simulation. When we first collected the data we noticed that there are usually two types of customers those that get coffees with their orders and those that don't. Coffee customers might wait longer so the next time the data is collected we could classify the customers as either coffee orders or not.
+
+This raises many questions after studying this system. What could be done to make the process more efficient for customers to order so their time in the system in minimized? What would happen if we were to hypothetically add more servers? More interesting questions like this can be answered if the project was of wider scope and more time was allowed. The customer arrivals were assumed to be independent of one another, however in our café system, many of the customers often came to order in groups of two or more. Even if they came alone to order they sometimes ran into people they knew and started talking which influenced the time of service and departure.  This further reinforces our analysis on the distributions of interarrival times and service times. The distributions of these times are expected to be exponential but they are not due to the arrivals not being independent. So thus can not assume the customers arriva via a poisson process.
 
 \bibliographystyle{plain}
 \bibliography{references}
